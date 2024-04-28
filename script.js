@@ -9,7 +9,7 @@ const book = class {
     }
     createBook = () => {
         const allBooks = document.querySelector(".allBooks");
-        allBooks.innerHTML += `<div"><img width="${this.width} height="${this.height} src=${this.img}><p>${this.name}</p></div>`;
+        allBooks.innerHTML += `<div><img width="${this.width} height="${this.height} src=${this.img}><p>${this.name}</p></div>`;
     }
 }
 
