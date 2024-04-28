@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000; 1,200..1000&family=Наряд:wght@100.. 900&family=Шестьдесят четыре&display=swap');
+body {
+    font-family: "Mulish", sans-serif;
+    background-color: #e2e2e2;
+}
+
+header {
+    margin: 0;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: #fffbf4;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin: 10px;
+}
+
+.search {
+    margin: 50px;
+    height: 40%;
+    border-radius: 5px;
+    border-color:  #e2e2e2;
+    background-color: #e2e2e2;
+}
+
+main {
+    margin: 20px 0px;
+    height: 90vh;
+    border-radius: 10px;
+    background-color: #fffbf4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.capital {
+    width: 100px; height: 100px;
+    background-color: aquamarine;
+}
