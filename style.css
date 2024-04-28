@@ -17,6 +17,10 @@ header {
     margin: 10px;
 }
 
+h2 {
+    margin: 50px;
+}
+
 .search {
     margin: 50px;
     height: 40%;
@@ -35,7 +39,15 @@ main {
     align-items: center; 
 }
 
-.capital {
-    width: 100px; height: 100px;
-    background-color: aquamarine;
+.container {
+    margin: 50px;
+    width: 100%;
 }
+
+.allBooks {
+    margin: 50px;
+    width: 99%;
+    display: flex;
+    justify-content: flex-start;
+}
+
