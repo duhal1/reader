@@ -8,11 +8,8 @@ const book = class {
         this.height = this.height;
     }
     createBook = () => {
-        const book1 =  document.createElement("div");
-        book1.class = this.name
         const allBooks = document.querySelector(".allBooks");
-        allBooks.html = book1;
-        
+        allBooks.innerHTML += `<div"><img width="${this.width} height="${this.height} src=${this.img}><p>${this.name}</p></div>`;
     }
 }
 
