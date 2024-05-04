@@ -12,7 +12,9 @@ const book = class {
         allBooks.innerHTML += `<div class = "${this.name}"><img width="${this.width} height="${this.height} src=${this.img}><p>${this.name}</p></div>`;
         const book = document.querySelector(`.${this.name}`)
         book.style.margin = "10px"
-         
+        book.click(() => {window.location.href='read.html'})
     }
 }
 
+a = new book(text= "rrrrrrr", name="zolushka", text="img.jpeg")
+a.createBook()
