@@ -1,30 +1,28 @@
-function newLocation ()  {
-    window.location.href = "read.html"
-}   
+let books = [];
+  
 class book  {
-    width = 100; height = 100
-    constructor(text, name, img) {
-        this.text = text;
+    constructor(bookNum, name, img) {
+        this.bookNum = bookNum;
         this.name = name;
         this.img = img;
-        this.width = this.width;
-        this.height = this.height;
     }
 
-
     createBook ()  {
-
-        console.log(this.text, this.name);
         const allBooks = document.querySelector(".allBooks");
-        allBooks.innerHTML += `<div class = "${this.name}"><img width="${this.width} height="${this.height} src=${this.img}><p>${this.name}</p></div>`;
-        const book = document.querySelector(`.${this.name}`);
-        book.style.margin = "10px";
-        book.addEventListener('click', function() {
-            newLocation()
-        } );
-
+        allBooks.innerHTML += `<div><a href="books/${this.bookNum}.html"><img src = ${this.img}></a><p>${this.name}</p></div>`;
     }
 }
 
-a = new book(text= "rrrrrrr", name="zolushka", img="img.jpeg")
-a.createBook()
+let names = [
+    'незнайка', 'жёлтый туман', 'вини пух', 'волшебник изумрудного города', 
+    'хроники нарнии'
+]
+
+let images = ['images/noknolege.png', 'images/yellowfog.png', 'images/vinnypuh.png', 'images/magician.png', 'images/Chronicles.png']
+
+names.forEach((element, i) => {
+    let book1 = new book(bookNum = ['book', (i + 1) ].join(''), name = element, img = images[i])
+    book1.createBook();
+    })
+
+
