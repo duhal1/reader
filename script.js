@@ -1,15 +1,15 @@
 let books = [];
   
 class book  {
-    constructor(bookNum, name, img) {
-        this.bookNum = bookNum;
+    constructor(textNum, name, img) {
+        this.textNum = textNum;
         this.name = name;
         this.img = img;
     }
 
     createBook ()  {
         const allBooks = document.querySelector(".allBooks");
-        allBooks.innerHTML += `<div><a href="books/${this.bookNum}.html"><img src = ${this.img}></a><p>${this.name}</p></div>`;
+        allBooks.innerHTML += `<div><a href="books/read.html?${this.textNum}"><img src = ${this.img}></a><p>${this.name}</p></div>`;
     }
 }
 
@@ -23,7 +23,7 @@ let images = ['images/noknolege.png', 'images/yellowfog.png', 'images/vinnypuh.p
 
 
 names.forEach((element, i) => {
-            let book1 = new book(bookNum = ['book', (i + 1) ].join(''), name = element, img = images[i])
+            let book1 = new book(textNum = i, name = element, img = images[i])
         book1.createBook();
     })
 
