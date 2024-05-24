@@ -1,50 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000; 1,200..1000&family=Наряд:wght@100.. 900&family=Шестьдесят четыре&display=swap');
 
 body {
-    font-family: "Mulish", sans-serif;
-    font-size: large;
-    background-color: #e2e2e2;
-    height: 90vh;
+  font-family: "Mulish", sans-serif;
+  font-size: large;
+  background-color: #e2e2e2;
+  height: 90vh;
 }
 
 header {
-    margin: 0;
-    width: 100vw; height: 10%;
-    border-radius: 10px;
-    background-color: #fffbf4;
-    display: flex;
-    align-items: center;
+  margin: 0;
+  width: 100vw; height: 10%;
+  border-radius: 10px;
+  background-color: #fffbf4;
+  display: flex;
+  align-items: center;
 }
 
-
 main {
-    margin: 2% 0px;
-    width: 99vw; height: 90%;
-    border-radius: 10px;
-    background-color: #fffbf4;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    flex-wrap: wrap;
+  margin-top: 2%;
+  width: 99vw; height: 90%;
+  border-radius: 10px;
+  background-color: #fffbf4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  flex-wrap: wrap;
 }
 
 h3 {
-    margin: 3vw;
+  margin: 3vw;
 }
 
 div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
 }
 
 embed {
-    width: 100%; height: 100%;
+  width: 100%; height: 100%;
 }
 
-@media(max-width: 1080px){
-    main {
-        height: 98%;
-    }
+@media(max-width: 1080px) {
+  main {
+    height: 98%;
+}
 }

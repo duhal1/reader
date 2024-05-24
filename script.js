@@ -8,7 +8,7 @@ class book  {
     }
 
     createBook ()  {
-        const allBooks = document.querySelector(".allBooks");
+        const allBooks = document.querySelector(".all-books");
         allBooks.innerHTML += `<div><a href="books/read.html?${this.textNum}"><img src = ${this.img}></a><p>${this.name}</p></div>`;
     }
 }
