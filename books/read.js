@@ -5,10 +5,10 @@ let names = [
     'хроники нарнии', 
 ]
 
-const h1 = document.querySelector('h1');
+const h3 = document.querySelector('h3');
 const embed = document.querySelector('embed');
 
-h1.innerHTML = names[num];
+h3.innerHTML = names[num];
 embed.src = ['texts', `text${num}.txt`].join('/');
 
 
