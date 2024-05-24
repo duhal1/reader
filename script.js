@@ -15,14 +15,15 @@ class book  {
 
 let names = [
     'незнайка', 'жёлтый туман', 'вини пух', 'волшебник изумрудного города', 
-    'хроники нарнии'
+    'хроники нарнии', 
 ]
 
 let images = ['images/noknolege.png', 'images/yellowfog.png', 'images/vinnypuh.png', 'images/magician.png', 'images/Chronicles.png']
 
-names.forEach((element, i) => {
-    let book1 = new book(bookNum = ['book', (i + 1) ].join(''), name = element, img = images[i])
-    book1.createBook();
-    })
 
+
+names.forEach((element, i) => {
+            let book1 = new book(bookNum = ['book', (i + 1) ].join(''), name = element, img = images[i])
+        book1.createBook();
+    })
 
